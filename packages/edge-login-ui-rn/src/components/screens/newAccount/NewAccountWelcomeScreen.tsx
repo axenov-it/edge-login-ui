@@ -6,7 +6,6 @@ import { sprintf } from 'sprintf-js'
 import { LOGO_BIG, WELCOME_LOCK, WELCOME_SHIELD_KEY } from '../../../assets'
 import s from '../../../common/locales/strings'
 import * as Constants from '../../../constants/index'
-import * as Styles from '../../../styles/index'
 import { Branding } from '../../../types/Branding'
 import { Dispatch, RootState } from '../../../types/ReduxTypes'
 import { logEvent } from '../../../util/analytics'
@@ -139,11 +138,7 @@ const getStyles = cacheStyles((theme: Theme) => ({
   },
   actions: {
     marginTop: theme.rem(4.5)
-  },
-  nextButtonUpStyle: Styles.PrimaryButtonUpScaledStyle,
-  nextButtonUpTextStyle: Styles.PrimaryButtonUpTextScaledStyle,
-  nextButtonDownTextStyle: Styles.PrimaryButtonUpTextScaledStyle,
-  nextButtonDownStyle: Styles.PrimaryButtonDownScaledStyle
+  }
 }))
 
 export const NewAccountWelcomeScreen = connect<{}, DispatchProps, OwnProps>(

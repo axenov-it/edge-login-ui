@@ -167,7 +167,7 @@ const getStyles = cacheStyles((theme: Theme) => {
     borderWidth: theme.rem(0.1),
     flexDirection: 'row',
     justifyContent: 'center'
-  }
+  } as const
   const commonText = {
     fontFamily: theme.fontFamily,
     fontSize: theme.rem(1),

@@ -156,7 +156,7 @@ const styles = {
     downTextStyle: Styles.PrimaryButtonUpTextScaledStyle,
     downStyle: Styles.PrimaryButtonDownScaledStyle
   }
-}
+} as const
 
 export const NewAccountPinScreen = connect<StateProps, DispatchProps, OwnProps>(
   (state: RootState) => ({

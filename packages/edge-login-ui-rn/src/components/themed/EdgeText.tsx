@@ -1,16 +1,16 @@
 // copied EdgeText component from 'edge-react-gui'
 
 import * as React from 'react'
-import { StyleSheet, Text } from 'react-native'
+import { Text, TextStyle } from 'react-native'
 import { cacheStyles } from 'react-native-patina'
 
 import { Theme, ThemeProps, withTheme } from '../services/ThemeContext'
 
 interface OwnProps {
   children: React.ReactNode
-  ellipsizeMode?: string
+  ellipsizeMode?: 'head' | 'middle' | 'tail' | 'clip'
   numberOfLines?: number
-  style?: StyleSheet.Styles
+  style?: TextStyle
 }
 
 class EdgeTextComponent extends React.PureComponent<OwnProps & ThemeProps> {

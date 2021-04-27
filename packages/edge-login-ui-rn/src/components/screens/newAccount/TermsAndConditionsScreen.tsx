@@ -230,7 +230,7 @@ const styles = {
     downStyle: Styles.TextOnlyButtonDownScaledStyle
   },
   inputShim: { width: '100%', height: scale(20) }
-}
+} as const
 
 export const TermsAndConditionsScreen = connect<
   StateProps,
