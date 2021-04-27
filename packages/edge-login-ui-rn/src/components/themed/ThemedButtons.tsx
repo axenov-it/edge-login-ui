@@ -1,5 +1,11 @@
 import * as React from 'react'
-import { ActivityIndicator, Text, TouchableOpacity } from 'react-native'
+import {
+  ActivityIndicator,
+  Text,
+  TextStyle,
+  TouchableOpacity,
+  ViewStyle
+} from 'react-native'
 import { cacheStyles } from 'react-native-patina'
 
 import {
@@ -161,14 +167,14 @@ export function AlertModalButton(props: Props & AlertModalButtonType) {
 }
 
 const getStyles = cacheStyles((theme: Theme) => {
-  const commonButton = {
+  const commonButton: ViewStyle = {
     alignItems: 'center',
     borderRadius: theme.rem(1.5),
     borderWidth: theme.rem(0.1),
     flexDirection: 'row',
     justifyContent: 'center'
-  } as const
-  const commonText = {
+  }
+  const commonText: TextStyle = {
     fontFamily: theme.fontFamily,
     fontSize: theme.rem(1),
     lineHeight: theme.rem(2),
