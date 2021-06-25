@@ -1,4 +1,4 @@
-const strings = {
+export default {
   app_name_default: 'Edge',
   edge_site: 'https://edge.app/',
   login_button: 'Login',
@@ -249,5 +249,3 @@ const strings = {
     'Please enable notifications for account security. Edge will notify you if other devices attempt to access your account and will allow you to accept or reject access.',
   change_recovery_same_question: 'Cannot use the same 2 recovery questions'
 }
-
-module.exports = strings
